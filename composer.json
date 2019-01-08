@@ -2,6 +2,7 @@
     "name": "andreiyastrzhembski/brain-games-hexlet",
     "description": "CLI games",
     "keywords": ["games","hexlet"],
+    "type": "library",
     "authors": [
         {
             "name": "Andrei Yastrzhembski",
