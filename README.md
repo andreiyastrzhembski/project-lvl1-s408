@@ -1,4 +1,7 @@
 # Brain Games
+[![Maintainability](https://api.codeclimate.com/v1/badges/a6cecbf8f927baef6c65/maintainability)](https://codeclimate.com/github/andreiyastrzhembski/project-lvl1-s408/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/a6cecbf8f927baef6c65/test_coverage)](https://codeclimate.com/github/andreiyastrzhembski/project-lvl1-s408/test_coverage)
+
 Brain Games is Hexlet training project.
 https://hexlet.io
 
