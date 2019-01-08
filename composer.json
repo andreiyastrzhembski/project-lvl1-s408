@@ -12,6 +12,9 @@
     "bin": [
         "bin/brain-games"
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "files": ["src/Cli.php"]
     },
