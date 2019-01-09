@@ -8,6 +8,9 @@ https://hexlet.io
 
 ## Installation
 ```
-composer global require andreiyastrzhembski/brain-games-hexlet:dev-master
+composer global require andreiyastrzhembski/brain-games-hexlet
 ```
 [![asciicast](https://asciinema.org/a/bn342UVSo9jV6CX2gjS1vBbPE.svg)](https://asciinema.org/a/bn342UVSo9jV6CX2gjS1vBbPE)
+
+### brain-even
+[![asciicast](https://asciinema.org/a/xeYTjrKEKHJG4s1OelNoFzk16.svg)](https://asciinema.org/a/xeYTjrKEKHJG4s1OelNoFzk16)
