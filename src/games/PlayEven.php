@@ -1,9 +1,6 @@
 <?php
 namespace BrainGames\Games\PlayEven;
 
-use function \cli\line;
-use function \cli\prompt;
-
 function isEven(int $num): bool
 {
     return $num  % 2 === 0;
