@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+
+<?php
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+
+$GAME_RULES = 'Find the greatest common divisor of given numbers.';
+
+BrainGames\GameEngine\runGame($GAME_RULES, BrainGames\Games\PlayGCD\playGCD());
