@@ -1,6 +1,12 @@
 <?php
 namespace BrainGames\Games\PlayCalc;
 
+use function BrainGames\GameEngine\runGame;
+
+const GAME_RULES = 'What is the result of the expression?';
+const MIN_NUMBER = 0;
+const MAX_NUMBER = 99;
+
 function getOperationAndResult($num1, $num2)
 {
     $operation = rand(1, 3);
@@ -27,12 +33,9 @@ function getOperationAndResult($num1, $num2)
 
 function playCalc()
 {
-    $MIN_NUMBER = 0;
-    $MAX_NUMBER = 99;
-    
-    return function () use ($MIN_NUMBER, $MAX_NUMBER) {
-        $num1 = rand($MIN_NUMBER, $MAX_NUMBER);
-        $num2 = rand($MIN_NUMBER, $MAX_NUMBER);
+    runGame(GAME_RULES, function () {
+        $num1 = rand(MIN_NUMBER, MAX_NUMBER);
+        $num2 = rand(MIN_NUMBER, MAX_NUMBER);
         $operationAndResult = getOperationAndResult($num1, $num2);
         $operation = $operationAndResult['operation'];
 
@@ -43,5 +46,5 @@ function playCalc()
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
-    };
+    });
 }

@@ -10,6 +10,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$GAME_RULES = 'What is the result of the expression?';
-
-BrainGames\GameEngine\runGame($GAME_RULES, BrainGames\Games\PlayCalc\playCalc());
+BrainGames\Games\PlayCalc\playCalc();

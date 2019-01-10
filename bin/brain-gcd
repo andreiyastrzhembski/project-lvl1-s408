@@ -10,6 +10,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$GAME_RULES = 'Find the greatest common divisor of given numbers.';
-
-BrainGames\GameEngine\runGame($GAME_RULES, BrainGames\Games\PlayGCD\playGCD());
+BrainGames\Games\PlayGCD\playGCD();
