@@ -4,12 +4,12 @@ namespace BrainGames\GameEngine;
 use function \cli\line;
 use function \cli\prompt;
 
-function runGame($playGame)
+function runGame($gameRules, $playGame)
 {
     $NUMBER_OF_ROUNDS = 3;
 
     line('Welcome to the Brain Games!');
-    line('Answer "yes" if number even otherwise answer "no".' . "\n");
+    line($gameRules . "\n");
     $name = prompt('May I have your name?');
     line("Hello, {$name}!\n");
 
