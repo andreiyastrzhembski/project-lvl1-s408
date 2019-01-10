@@ -4,17 +4,17 @@ namespace BrainGames\GameEngine;
 use function \cli\line;
 use function \cli\prompt;
 
-function runGame($gameRules, $playGame)
-{
-    $NUMBER_OF_ROUNDS = 3;
+const NUMBER_OF_ROUNDS = 3;
 
+function runGame($gameRules, $getQuestionAndAnswer)
+{
     line('Welcome to the Brain Games!');
     line($gameRules . "\n");
     $name = prompt('May I have your name?');
     line("Hello, {$name}!\n");
 
-    for ($i = 0; $i < $NUMBER_OF_ROUNDS; $i++) {
-        $questionAndAnswer = $playGame();
+    for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
+        $questionAndAnswer = $getQuestionAndAnswer();
         $question = $questionAndAnswer['question'];
         $correctAnswer = $questionAndAnswer['correctAnswer'];
         line("Question: {$question}");

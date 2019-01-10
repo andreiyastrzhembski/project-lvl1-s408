@@ -10,6 +10,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-$GAME_RULES = 'Answer "yes" if number even otherwise answer "no".';
-
-BrainGames\GameEngine\runGame($GAME_RULES, BrainGames\Games\PlayEven\playEven());
+BrainGames\Games\PlayEven\playEven();
