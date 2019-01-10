@@ -17,7 +17,7 @@
         "phpcs": "phpcs"
     },
     "autoload": {
-        "files": ["src/Cli.php", "src/playEven.php"]
+        "files": ["src/GameEngine.php", "src/Cli.php", "src/games/PlayEven.php"]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.11"
