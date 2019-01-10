@@ -14,3 +14,6 @@ composer global require andreiyastrzhembski/brain-games-hexlet
 
 ### brain-even
 [![asciicast](https://asciinema.org/a/xeYTjrKEKHJG4s1OelNoFzk16.svg)](https://asciinema.org/a/xeYTjrKEKHJG4s1OelNoFzk16)
+
+### brain-calc
+[![asciicast](https://asciinema.org/a/55AYwsPMNkWsYTKbpLdPTr8uz.svg)](https://asciinema.org/a/55AYwsPMNkWsYTKbpLdPTr8uz)
