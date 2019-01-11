@@ -31,20 +31,22 @@ function getOperationAndResult($num1, $num2)
     ];
 }
 
+$getQuestionAndAnswer = function () {
+    $num1 = rand(MIN_NUMBER, MAX_NUMBER);
+    $num2 = rand(MIN_NUMBER, MAX_NUMBER);
+    $operationAndResult = getOperationAndResult($num1, $num2);
+    $operation = $operationAndResult['operation'];
+
+    $question = "{$num1} {$operation} {$num2}";
+    $correctAnswer = (string) $operationAndResult['result'];
+
+    return [
+        'question' => $question,
+        'correctAnswer' => $correctAnswer
+    ];
+};
+
 function playCalc()
 {
-    runGame(GAME_RULES, function () {
-        $num1 = rand(MIN_NUMBER, MAX_NUMBER);
-        $num2 = rand(MIN_NUMBER, MAX_NUMBER);
-        $operationAndResult = getOperationAndResult($num1, $num2);
-        $operation = $operationAndResult['operation'];
-
-        $question = "{$num1} {$operation} {$num2}";
-        $correctAnswer = (string) $operationAndResult['result'];
-
-        return [
-            'question' => $question,
-            'correctAnswer' => $correctAnswer
-        ];
-    });
+    runGame(GAME_RULES, $getQuestionAndAnswer);
 }
