@@ -23,3 +23,6 @@ composer global require andreiyastrzhembski/brain-games-hexlet
 
 ### brain-progression
 [![asciicast](https://asciinema.org/a/cQm39PIuIc8Jz63xUz0O6wnFp.svg)](https://asciinema.org/a/cQm39PIuIc8Jz63xUz0O6wnFp)
+
+### brain-prime
+[![asciicast](https://asciinema.org/a/55aTn1Q122IwkebsK2CrlghZd.svg)](https://asciinema.org/a/55aTn1Q122IwkebsK2CrlghZd)
