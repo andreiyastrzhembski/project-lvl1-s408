@@ -15,8 +15,8 @@ function runGame($gameRules, $getQuestionAndAnswer)
 
     for ($i = 0; $i < NUMBER_OF_ROUNDS; $i++) {
         $questionAndAnswer = $getQuestionAndAnswer();
-        $question = $questionAndAnswer['question'];
-        $correctAnswer = $questionAndAnswer['correctAnswer'];
+        ['question' => $question, 'correctAnswer' => $correctAnswer] = $questionAndAnswer;
+
         line("Question: {$question}");
         $answer = prompt('Your answer');
         if ($answer === $correctAnswer) {
