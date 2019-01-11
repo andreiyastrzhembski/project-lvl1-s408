@@ -20,3 +20,6 @@ composer global require andreiyastrzhembski/brain-games-hexlet
 
 ### brain-gcd
 [![asciicast](https://asciinema.org/a/676o5Rg7okKbz4Jf1ul52Dr9i.svg)](https://asciinema.org/a/676o5Rg7okKbz4Jf1ul52Dr9i)
+
+### brain-progression
+[![asciicast](https://asciinema.org/a/cQm39PIuIc8Jz63xUz0O6wnFp.svg)](https://asciinema.org/a/cQm39PIuIc8Jz63xUz0O6wnFp)
