@@ -23,10 +23,10 @@
         "files": [
             "src/GameEngine.php",
             "src/Cli.php",
-            "src/games/PlayEven.php",
-            "src/games/PlayCalc.php",
-            "src/games/PlayGCD.php",
-            "src/games/PlayProgression.php"
+            "src/Games/PlayEven.php",
+            "src/Games/PlayCalc.php",
+            "src/Games/PlayGCD.php",
+            "src/Games/PlayProgression.php"
         ]
     },
     "require": {
