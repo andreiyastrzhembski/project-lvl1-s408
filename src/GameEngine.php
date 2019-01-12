@@ -6,10 +6,10 @@ use function \cli\prompt;
 
 const NUMBER_OF_ROUNDS = 3;
 
-function runGame($gameRules, $getQuestionAndAnswer)
+function runGame($description, $getQuestionAndAnswer)
 {
     line('Welcome to the Brain Games!');
-    line($gameRules . "\n");
+    line($description . "\n");
     $name = prompt('May I have your name?');
     line("Hello, {$name}!\n");
 

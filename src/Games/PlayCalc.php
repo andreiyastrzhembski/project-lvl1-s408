@@ -3,7 +3,7 @@ namespace BrainGames\Games\PlayCalc;
 
 use function BrainGames\GameEngine\runGame;
 
-const GAME_RULES = 'What is the result of the expression?';
+const DESCRIPTION = 'What is the result of the expression?';
 const MIN_NUMBER = 0;
 const MAX_NUMBER = 99;
 
@@ -47,5 +47,5 @@ function playCalc()
             'correctAnswer' => $correctAnswer
         ];
     };
-    runGame(GAME_RULES, $getQuestionAndAnswer);
+    runGame(DESCRIPTION, $getQuestionAndAnswer);
 }

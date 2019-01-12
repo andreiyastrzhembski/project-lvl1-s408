@@ -3,7 +3,7 @@ namespace BrainGames\Games\PlayGCD;
 
 use function BrainGames\GameEngine\runGame;
 
-const GAME_RULES = 'Find the greatest common divisor of given numbers.';
+const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
 const MIN_NUMBER = 0;
 const MAX_NUMBER = 99;
 
@@ -30,5 +30,5 @@ function playGCD()
             'correctAnswer' => $correctAnswer
         ];
     };
-    runGame(GAME_RULES, $getQuestionAndAnswer);
+    runGame(DESCRIPTION, $getQuestionAndAnswer);
 }

@@ -3,37 +3,33 @@ namespace BrainGames\Games\PlayProgression;
 
 use function BrainGames\GameEngine\runGame;
 
-const GAME_RULES = 'What number is missing in the progression?';
+const DESCRIPTION = 'What number is missing in the progression?';
 const MIN_NUMBER = 0;
-const MAX_NUMBER = 9;
+const MAX_NUMBER = 20;
+const MIN_STEP = 1;
+const MAX_STEP = 10;
+const PROGRESSION_LENGTH = 9;
 
 function playProgression()
 {
     $getQuestionAndAnswer = function () {
         $startNumber = rand(MIN_NUMBER, MAX_NUMBER);
-        $step = rand(MIN_NUMBER, MAX_NUMBER);
-        $missingPosition = rand(MIN_NUMBER, MAX_NUMBER);
+        $step = rand(MIN_STEP, MAX_STEP);
+        $questionPosition = rand(0, PROGRESSION_LENGTH);
 
-        $progression = [$startNumber];
-        for ($i = 1; $i <= MAX_NUMBER; $i++) {
-            $progression[] = $progression[$i - 1] + $step;
+        $progression = [];
+        for ($i = 0; $i <= PROGRESSION_LENGTH; $i++) {
+            $progression[] = $startNumber + ($step * $i);
         }
 
-        $question = '';
-        foreach ($progression as $key => $num) {
-            if ($key === $missingPosition) {
-                $question .= '.. ';
-            } else {
-                $question .= "{$num} ";
-            }
-        }
-
-        $correctAnswer = (string) $progression[$missingPosition];
-
+        $correctAnswer = (string) $progression[$questionPosition];
+        $progression[$questionPosition] = '..';
+        $question = join(' ', $progression);
+        
         return [
             'question' => $question,
             'correctAnswer' => $correctAnswer
         ];
     };
-    runGame(GAME_RULES, $getQuestionAndAnswer);
+    runGame(DESCRIPTION, $getQuestionAndAnswer);
 }

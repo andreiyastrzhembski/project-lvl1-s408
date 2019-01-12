@@ -3,7 +3,7 @@ namespace BrainGames\Games\PlayPrime;
 
 use function BrainGames\GameEngine\runGame;
 
-const GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const MIN_NUMBER = 0;
 const MAX_NUMBER = 99;
 
@@ -30,5 +30,5 @@ function playPrime()
             'correctAnswer' => $correctAnswer
         ];
     };
-    runGame(GAME_RULES, $getQuestionAndAnswer);
+    runGame(DESCRIPTION, $getQuestionAndAnswer);
 }

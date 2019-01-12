@@ -3,7 +3,7 @@ namespace BrainGames\Games\PlayEven;
 
 use function BrainGames\GameEngine\runGame;
 
-const GAME_RULES = 'Answer "yes" if number even otherwise answer "no".';
+const DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".';
 const MIN_NUMBER = 0;
 const MAX_NUMBER = 99;
 
@@ -22,5 +22,5 @@ function playEven()
             'correctAnswer' => $correctAnswer
         ];
     };
-    runGame(GAME_RULES, $getQuestionAndAnswer);
+    runGame(DESCRIPTION, $getQuestionAndAnswer);
 }
