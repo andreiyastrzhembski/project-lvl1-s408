@@ -20,13 +20,13 @@ function playProgression()
         $progression = [];
         for ($i = 0; $i < PROGRESSION_LENGTH; $i++) {
             if ($i === $questionPosition) {
-                $correctAnswer = (string) ($startNumber + ($step * $i));
                 $progression[] = '..';
             } else {
                 $progression[] = $startNumber + ($step * $i);
             }
         }
 
+        $correctAnswer = (string) ($startNumber + ($step * $questionPosition));
         $question = join(' ', $progression);
         
         return [
